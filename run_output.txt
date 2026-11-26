@@ -1,0 +1,23 @@
+303 patients, 139 with heart disease, 6 missing values (filled with the median)
+
+== Logistic Regression: 5-fold CV 0.822, test accuracy 0.869
+              precision    recall  f1-score   support
+
+  no disease       0.93      0.82      0.87        33
+     disease       0.81      0.93      0.87        28
+
+    accuracy                           0.87        61
+   macro avg       0.87      0.87      0.87        61
+weighted avg       0.88      0.87      0.87        61
+
+== Random Forest: 5-fold CV 0.810, test accuracy 0.902
+              precision    recall  f1-score   support
+
+  no disease       0.97      0.85      0.90        33
+     disease       0.84      0.96      0.90        28
+
+    accuracy                           0.90        61
+   macro avg       0.90      0.91      0.90        61
+weighted avg       0.91      0.90      0.90        61
+
+Top features: thal, thalach, cp, ca, age
